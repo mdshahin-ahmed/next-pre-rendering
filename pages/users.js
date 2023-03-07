@@ -1,3 +1,4 @@
+import User from "@/components/user";
 import React from "react";
 
 const UserList = ({ users }) => {
@@ -7,8 +8,7 @@ const UserList = ({ users }) => {
       {users.map((user) => {
         return (
           <div key={user.id}>
-            <div>{user.name}</div>
-            <div>{user.email}</div>
+            <User user={user}></User>
           </div>
         );
       })}
